@@ -30,10 +30,11 @@
         android:id="@+id/account_text_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
         android:layout_row="0"
+        android:layout_column="0"
         android:text="@string/account_text"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic" />
 
     <Spinner
         android:id="@+id/account_selector"
@@ -46,10 +47,11 @@
         android:id="@+id/expense_type_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
         android:layout_row="1"
+        android:layout_column="0"
         android:text="@string/expense_type_text"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic" />
 
     <RadioGroup
         android:id="@+id/expense_type_group"
@@ -63,23 +65,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:checked="true"
-            android:text="@string/expense_text"/>
+            android:text="@string/expense_text"
+            android:textStyle="italic" />
 
         <RadioButton
             android:id="@+id/income"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/income_text"/>
+            android:text="@string/income_text"
+            android:textStyle="italic" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/amount_text_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
         android:layout_row="2"
+        android:layout_column="0"
         android:text="@string/amount_text"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/amount"
@@ -93,10 +98,11 @@
         android:id="@+id/date_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
         android:layout_row="3"
+        android:layout_column="0"
         android:text="@string/date_text"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic" />
 
     <DatePicker
         android:id="@+id/date_selector"
@@ -111,8 +117,9 @@
         android:id="@+id/submit_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
         android:layout_row="4"
-        android:text="@string/submit"/>
+        android:layout_column="0"
+        android:text="@string/submit"
+        android:textColor="#B50D0D" />
 
 </GridLayout>
